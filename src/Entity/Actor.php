@@ -55,6 +55,9 @@ class Actor
     #[ORM\ManyToMany(targetEntity: Movie::class, mappedBy: 'actors')]
     private Collection $movies;
 
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
+    private ?\DateTimeInterface $SetDeathDate = null;
+
     public function __construct()
     {
         $this->movies = new ArrayCollection();
@@ -214,6 +217,19 @@ class Actor
         if ($this->movies->removeElement($movie)) {
             $movie->removeActor($this);
         }
+
+        return $this;
+    }
+
+
+    public function getSetDeathDate(): ?\DateTimeInterface
+    {
+        return $this->SetDeathDate;
+    }
+
+    public function setSetDeathDate(?\DateTimeInterface $SetDeathDate): static
+    {
+        $this->SetDeathDate = $SetDeathDate;
 
         return $this;
     }
