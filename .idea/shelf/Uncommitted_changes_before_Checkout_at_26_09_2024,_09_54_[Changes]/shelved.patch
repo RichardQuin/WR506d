@@ -1,0 +1,66 @@
+Index: www/PROJET/src/service/SlugifyService.php
+===================================================================
+diff --git a/www/PROJET/src/service/SlugifyService.php b/www/PROJET/src/service/SlugifyService.php
+--- a/www/PROJET/src/service/SlugifyService.php	(revision 98ef212d473728a32e1036eb7b9f49009f802810)
++++ b/www/PROJET/src/service/SlugifyService.php	(date 1726037606659)
+@@ -1,0 +1,26 @@
++<?php
++
++namespace App\service;
++
++class SlugifyService
++{
++    public function slugify(string $text): string
++    {
++        // Convertir la chaîne en minuscules
++        $text = strtolower($text);
++
++        // Remplacer les accents et les caractères spéciaux
++        $text = iconv('UTF-8', 'ASCII//TRANSLIT', $text);
++
++        // Supprimer les caractères non alphanumériques sauf les espaces
++        $text = preg_replace('/[^a-z0-9\s-]/', '', $text);
++
++        // Remplacer les espaces et tirets multiples par un seul tiret
++        $text = preg_replace('/[\s-]+/', '-', $text);
++
++        // Supprimer les tirets au début et à la fin
++        $text = trim($text, '-');
++
++        return $text;
++    }
++}
+Index: www/PROJET/templates/product/view.html.twig
+===================================================================
+diff --git a/www/PROJET/templates/product/view.html.twig b/www/PROJET/templates/product/view.html.twig
+--- a/www/PROJET/templates/product/view.html.twig	(revision 98ef212d473728a32e1036eb7b9f49009f802810)
++++ b/www/PROJET/templates/product/view.html.twig	(date 1726035656145)
+@@ -1,0 +1,11 @@
++<!DOCTYPE html>
++<html lang="fr">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>{{ title }}</title>
++</head>
++<body>
++<h1>{{ title }}</h1>
++</body>
++</html>
+Index: www/PROJET/templates/product/list.html.twig
+===================================================================
+diff --git a/www/PROJET/templates/product/list.html.twig b/www/PROJET/templates/product/list.html.twig
+--- a/www/PROJET/templates/product/list.html.twig	(revision 98ef212d473728a32e1036eb7b9f49009f802810)
++++ b/www/PROJET/templates/product/list.html.twig	(date 1726035648623)
+@@ -1,0 +1,11 @@
++<!DOCTYPE html>
++<html lang="fr">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>{{ title }}</title>
++</head>
++<body>
++<h1>{{ title }}</h1>
++</body>
++</html>
