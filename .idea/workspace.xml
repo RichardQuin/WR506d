@@ -4,71 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a6e20e2-1423-49b5-b336-ee30b29b1759" name="Changes" comment="fixture">
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controllers/hello_controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/phpunit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.override.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/asset_mapper.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/cache.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/debug.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/mailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/messenger.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/notifier.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/routing.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/preload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/importmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DemoController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/SlugifyService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/demo/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product/list.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product/view.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/PROJET/.env" beforeDir="false" afterPath="$PROJECT_DIR$/www/PROJET/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/PROJET/compose.override.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/www/PROJET/compose.override.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/PROJET/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/www/PROJET/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/PROJET/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/PROJET/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/PROJET/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/www/PROJET/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/PROJET/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/PROJET/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/PROJET/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/www/PROJET/symfony.lock" afterDir="false" />
+    <list default="true" id="2a6e20e2-1423-49b5-b336-ee30b29b1759" name="Changes" comment="maj user">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/PROJET/src/Entity/Categori.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/PROJET/src/Entity/Categori.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/pokemon/.env" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/pokemon/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/pokemon/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/pokemon/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/pokemon/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/pokemon/src/Entity/Actor.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/src/Entity/Actor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/pokemon/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/config/packages/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/pokemon/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/pokemon/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/pokemon/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/pokemon/src/Entity/Movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/src/Entity/Movie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/pokemon/src/Entity/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/pokemon/src/Repository/UserRepository.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/www/pokemon/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/www/pokemon/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -273,7 +223,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -316,7 +266,14 @@
       <workItem from="1727337158793" duration="3349000" />
       <workItem from="1727703567414" duration="6072000" />
       <workItem from="1728389165682" duration="6375000" />
-      <workItem from="1728551672001" duration="2442000" />
+      <workItem from="1728551672001" duration="5543000" />
+      <workItem from="1728893057381" duration="733000" />
+      <workItem from="1728893871618" duration="749000" />
+      <workItem from="1728894783764" duration="3465000" />
+      <workItem from="1729058637742" duration="2732000" />
+      <workItem from="1729064892209" duration="8828000" />
+      <workItem from="1729519997215" duration="12000" />
+      <workItem from="1729521729508" duration="211000" />
     </task>
     <task id="LOCAL-00001" summary="demo">
       <option name="closed" value="true" />
@@ -350,7 +307,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728391009972</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="maj">
+      <option name="closed" value="true" />
+      <created>1728886748127</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728886748127</updated>
+    </task>
+    <task id="LOCAL-00006" summary="maj user">
+      <option name="closed" value="true" />
+      <created>1729065051955</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729065051955</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +353,9 @@
     <MESSAGE value="demo" />
     <MESSAGE value="demo2" />
     <MESSAGE value="fixture" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixture" />
+    <MESSAGE value="maj" />
+    <MESSAGE value="maj user" />
+    <option name="LAST_COMMIT_MESSAGE" value="maj user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
