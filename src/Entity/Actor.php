@@ -8,10 +8,14 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Metadata\ApiFilter;
 
 #[ORM\Entity(repositoryClass: ActorRepository::class)]
 #[ORM\HasLifecycleCallbacks]
 #[ApiResource]
+#[ApiFilter(SearchFilter::class, properties: ['movies.title' => 'partial'])]
 class Actor
 {
     #[ORM\Id]
@@ -20,27 +24,37 @@ class Actor
     private ?int $id = null;
 
     #[ORM\Column(length: 255, nullable: true)]
+    #[Assert\NotBlank(message: "Le nom ne doit pas être vide.")]
+    #[Assert\Length(max: 255, maxMessage: "Le nom ne doit pas dépasser {{ limit }} caractères.")]
     private ?string $lastname = null;
 
     #[ORM\Column(length: 255)]
+    #[Assert\NotBlank(message: "Le prénom est obligatoire.")]
+    #[Assert\Length(max: 255, maxMessage: "Le prénom ne doit pas dépasser {{ limit }} caractères.")]
     private ?string $firstname = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE, nullable: true)]
+    #[Assert\LessThanOrEqual("today", message: "La date de naissance ne peut pas être dans le futur.")]
     private ?\DateTimeInterface $dob = null;
 
     #[ORM\Column(nullable: true)]
+    #[Assert\PositiveOrZero(message: "Le nombre de récompenses doit être positif ou égal à zéro.")]
     private ?int $awards = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]
+    #[Assert\Length(max: 1000, maxMessage: "La biographie ne doit pas dépasser {{ limit }} caractères.")]
     private ?string $bio = null;
 
     #[ORM\Column(length: 255)]
+    #[Assert\NotBlank(message: "La nationalité est obligatoire.")]
     private ?string $nationality = null;
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $media = null;
 
     #[ORM\Column(length: 255)]
+    #[Assert\NotBlank(message: "Le sexe est obligatoire.")]
+    #[Assert\Choice(choices: ["male", "female", "other"], message: "Le sexe doit être 'male', 'female' ou 'other'.")]
     private ?string $gender = null;
 
     #[ORM\Column]
@@ -54,6 +68,10 @@ class Actor
      */
     #[ORM\ManyToMany(targetEntity: Movie::class, mappedBy: 'actors')]
     private Collection $movies;
+
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
+    #[Assert\GreaterThanOrEqual(propertyPath: "dob", message: "La date de décès doit être supérieure à la date de naissance.")]
+    private ?\DateTimeInterface $SetDeathDate = null;
 
     public function __construct()
     {
@@ -214,6 +232,18 @@ class Actor
         if ($this->movies->removeElement($movie)) {
             $movie->removeActor($this);
         }
+
+        return $this;
+    }
+
+    public function getSetDeathDate(): ?\DateTimeInterface
+    {
+        return $this->SetDeathDate;
+    }
+
+    public function setSetDeathDate(?\DateTimeInterface $SetDeathDate): static
+    {
+        $this->SetDeathDate = $SetDeathDate;
 
         return $this;
     }
